@@ -102,25 +102,81 @@ nav button:hover{
     background: linear-gradient(to left,white,lightgreen);
 }
 /*why styling*/
-.why{
-    background: linear-gradient(to left,lightgreen,white);
-    margin-top: 10px;
-    border-radius: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 20px;
-}
 .why h1{
     text-align: center;
-}
-.why p{
-    height: auto;
-    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-/*media queries*/
-@media (max-width: 481px) {
-   .home .content{
+.why .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(to left,white,rgb(240, 235, 235));
+  }
+  .why .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 15px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(6, 235, 185, 0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+  }
+  .why .boxes .box:hover{
+    background: lightgreen;
+    color: black;
+  }
+  .why .boxes .box:hover .topic,
+  .why .boxes .box:hover p{
+    color: black;
+    transition: all 0.3s ease;
+  }
+  .why .boxes .box:hover .topic,
+  .why .boxes .box:hover p{
+    color: black;
+  }
+  .topic{
+    text-align: center;
+    font-weight: 700;
+  }
+  img{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+
+  /*responsive design*/
+  @media (max-width: 750px) {
+    .latest .latest-details{
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .latest-details .text{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .latest-details .boxes{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .latest .boxes .box{
+      margin: 20px 0;
+      width: 100%;
+    }
+   
+  }
+  
+  @media (max-width: 500px){
+    
+    .latest-details .boxes .per{
+      font-size: 50px;
+      color: #0E2431;
+    }.home .content{
         margin-top: 40%;
         padding-left: 3%;
 
@@ -130,13 +186,5 @@ nav button:hover{
     }
     .home .button{
         font-size: 14px;
-    }
-    
-}
-@media (max-width: 768px) {
-    .home .content{
-        margin-top: 30%;
-        
-    }
-    
-}
+    }}
+
