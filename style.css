@@ -112,7 +112,7 @@ nav button:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: linear-gradient(to left,white,rgb(240, 235, 235));
+    background: linear-gradient(to left,white,rgb(225, 235, 236));
   }
   .why .boxes .box{
     margin: 20px 0;
@@ -150,21 +150,21 @@ nav button:hover{
 
   /*responsive design*/
   @media (max-width: 750px) {
-    .latest .latest-details{
+    .why .why-details{
       align-items: center;
       justify-content: center;
       flex-direction: column;
     }
-    .latest-details .text{
+    .why-details .text{
       width: 100%;
       margin-bottom: 50px;
     }
-    .latest-details .boxes{
+    .why-details .boxes{
       justify-content: center;
       align-items: center;
       width: 100%;
     }
-    .latest .boxes .box{
+    .why .boxes .box{
       margin: 20px 0;
       width: 100%;
     }
@@ -173,7 +173,7 @@ nav button:hover{
   
   @media (max-width: 500px){
     
-    .latest-details .boxes .per{
+    .why-details .boxes .per{
       font-size: 50px;
       color: #0E2431;
     }.home .content{
