@@ -23,7 +23,7 @@ nav{
     cursor: pointer;
 }
 .logo:hover{
-    color: blue;
+    color: green;
 }
 nav button{
     border-style: solid;
@@ -86,8 +86,11 @@ nav button:hover{
     font-weight: 300;
 }
 /*what styling*/
-.what h1{
+.title h1{
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 550;
 }
 .what p{
     height: auto;
@@ -106,6 +109,7 @@ nav button:hover{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: 550;
 }
 
 .why .boxes{
@@ -113,6 +117,9 @@ nav button:hover{
     flex-wrap: wrap;
     justify-content: space-between;
     background: linear-gradient(to left,white,rgb(225, 235, 236));
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
   }
   .why .boxes .box{
     margin: 20px 0;
@@ -125,7 +132,7 @@ nav button:hover{
     transition: all 0.4s ease;
   }
   .why .boxes .box:hover{
-    background: lightgreen;
+    background: linear-gradient(to left, lightgreen, white);
     color: black;
   }
   .why .boxes .box:hover .topic,
@@ -142,7 +149,7 @@ nav button:hover{
   }
   img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-top: 10px;
 }
 
@@ -175,8 +182,9 @@ nav button:hover{
     .why-details .boxes .per{
       font-size: 50px;
       color: #0E2431;
-    }.home .content{
-        margin-top: 40%;
+    }
+    .home .content{
+        margin-top: 100%;
         padding-left: 3%;
 
     }
@@ -185,5 +193,7 @@ nav button:hover{
     }
     .home .button{
         font-size: 14px;
-    }}
+    }
+
+  }
 
